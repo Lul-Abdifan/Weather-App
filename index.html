@@ -13,11 +13,15 @@
 <body>
        <div class="d-flex flex-column mt-5">
     <div class="d-flex justify-content-md-center  mb-5">
-    <div class="card border-primary mb-3" style="max-width: 18rem;">
-        <div class="card-header">Header</div>
+          <div class="card border-primary mb-3" style="max-width: 18rem;">
+        <div class="card-header" > <h3 class="align-items-center"><h2 id="country">Header</h2></div>
         <div class="card-body text-primary">
-          <h5 class="card-title">Primary card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h3 class="card-title" id="description">Primary card title</h3>
+          <h5 class="card-title" id="max_temp">Primary card title</h5>
+          <h5 class="card-title"id="min_temp">Primary card title</h5>
+          <h5 class="card-title"id="humidity">Primary card title</h5>
+          <h5 class="card-title"id="speed">Primary card title</h5>
+          
         </div>
       </div>
      
@@ -43,8 +47,14 @@
         </div>
       </div>
     </div>
+  </div>
+<div class="Information">
+  <div class="form d-flex justify-content-md-center">
+       <input type="text" class="weather-input text-success" placeholder="Enter Your country">
+       <input id="submit-country"  type="button" value="submit" class="submit btn btn-outline-info mx-3">
+<div>
     
 </div>
-    
+   <script defer src="script.js"></script>
 </body>
 </html>
