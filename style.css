@@ -1,7 +1,25 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+#datas{
+
+}
 #box{
     width:100%;
     height:100%;
 }
 body{
 background-image: url(pexels-kaique-rocha-125510.jpg);
+}
+.information{
+position:fixed;
+top:30px;
+right:20px;
+}
+.weather-input{
+    background-color: rgb(103, 187, 159);
+    border-radius: 15px;
+    border:5px rgb(103, 187, 159) solid;
+    outline:none;
 }
