@@ -1,13 +1,7 @@
 const inputCountry1 =document.querySelector(".weather-input").value
 const country = document.querySelector("#submit-country");
-country.addEventListener("click", function () 
-{
- 
-console.log(document.querySelector(".weather-input").value);
-
- });
-
-  let weather={
+//create weather weather objects for retrieving and showing on pages
+let weather={
 fetchWeather:function(city)
     {
         fetch(
@@ -29,17 +23,27 @@ showOnScreen:function(datas)
     console.log(speed);
     document.getElementById('country').innerHTML="Weather in " + name;
     document.getElementById('description').innerHTML=description;
-    document.getElementById('max_temp').innerHTML="max_temp" + temp_max;
-    document.getElementById('min_temp').innerHTML="min_temp " + temp_min;
-    document.getElementById('humidity').innerHTML="Humidity " + humidity;
-    document.getElementById('speed').innerHTML="Speed " + speed;
+    document.getElementById('max_temp').innerHTML="max_temp :" + `br`+ temp_max + " *C";
+    document.getElementById('min_temp').innerHTML="min_temp :" + temp_min + " *C" ;
+    document.getElementById('humidity').innerHTML="Humidity :" + humidity + " %";
+    document.getElementById('speed').innerHTML="Speed :" + speed + " km/hr";
 
 
+},
+//add clear input functionality
+clearInput:function()
+{
+    document.querySelector(".weather-input").value=" ";
 }
-    
-    
-
 }
+country.addEventListener("click", function () 
+{
+ 
+weather.fetchWeather(document.querySelector(".weather-input").value);
+weather.clearInput();
+
+
+ });
 
 
 
