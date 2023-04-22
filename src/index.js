@@ -1,43 +1,12 @@
-import './style.scss';
-
+import "./style.scss";
+import { render } from "./modules/render.js";
 
 const inputCountry1 = document.querySelector(".weather-input").value;
 const country = document.querySelector("#submit-country");
-// import render from "./modules/render";
-//create weather weather objects for retrieving and showing on pages
-const render = (city, id) => {
-  const parent = document.querySelector(".container");
-  let existingDiv = document.getElementById(`box${id}`);
-  if (existingDiv) {
-    existingDiv.innerHTML = `
-      <h3 class="card-title" id="description${id}"></h3>
-      <h5 class="card-title" id="max_temp${id}"></h5>
-      <h5 class="card-title"id="min_temp${id}"></h5>
-      <h5 class="card-title"id="humidity${id}"></h5>
-      <h5 class="card-title"id="speed${id}"></h5>
-    `;
-  } else {
-    const div = document.createElement("div");
-    div.classList.add("item");
-    div.innerHTML = `<div class="card-header" > 
-        <h3 class="align-items-center">
-          <h2 id="country${id}"></h2></div>
-      <div class="card-body" id="box${id}">
-        <h3 class="card-title" id="description${id}"></h3>
-        <h5 class="card-title" id="max_temp${id}"></h5>
-        <h5 class="card-title"id="min_temp${id}"></h5>
-        <h5 class="card-title"id="humidity${id}"></h5>
-        <h5 class="card-title"id="speed${id}"></h5>
-      </div>`;
-    parent.append(div);
-  }
-};
 
 let weather = {
   fetchWeather: function (city, id) {
-    if (id <= 9) {
-      render(city, id);
-    }
+  
 
     fetch(
       "https://api.openweathermap.org/data/2.5/weather?q=" +
@@ -71,20 +40,42 @@ let weather = {
   },
 };
 country.addEventListener("click", function () {
-  weather.fetchWeather(document.querySelector(".weather-input").value,8);
+  weather.fetchWeather(document.querySelector(".weather-input").value, 8);
   weather.clearInput();
 });
-// weather.fetchWeather("New York,USA", 0);
-weather.fetchWeather("USA,Iowa", 1);
-weather.fetchWeather("Ethiopia,Addis ABaba", 2);
-weather.fetchWeather("Sydney,Australia", 3);
-          weather.fetchWeather("Canada,Toronto", 4);
-weather.fetchWeather("Kenya,Nairobi", 5);
-weather.fetchWeather("Sydney,Australia", 6);
-weather.fetchWeather("Kenya,Nairobi", 7);
-weather.fetchWeather("Sydney,Australia", 8);
 
+const DataOfCity = [
+  {
+    id: 1,
+    city: "USA,Iowa",
+  },
+  {
+    id: 2,
+    city: "Russia",
+  },
+  {
+    i: 3,
+    city: "Canada,Toronto",
+  },
+  {
+    id: 4,
+    city: "Kenya,Nairobi",
+  },
+  {
+    id: 5,
+    city: "Ethiopia",
+  },
+  {
+    id: 6,
+    city: "Egypt",
+  },
+  {
+    id: 7,
+    city: "London",
+  },
+];
+DataOfCity.forEach((data)=>{
+  render(`${data.city}`,data.id)
+  weather.fetchWeather(`${data.city}`,data.id);
+})
 
-// {/* <div class="card border-primary mb-3" style="max-width: 28rem;">
-
-// // </div> */}
