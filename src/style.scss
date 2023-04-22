@@ -1,0 +1,89 @@
+
+
+// body {
+//   background-image: url(pexels-kaique-rocha-125510.jpg);
+// }
+.weather-header {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.container {
+  position: fixed;
+  bottom: 0%;
+  width: 70%;
+  padding-top: 100px !important;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-flow: row dense;
+
+  padding: 0px 50px;
+  color: rgb(31, 2, 2);
+}
+.item {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  color: black;
+  width: 250px;
+}
+
+.item .card-header {
+  background-color: silver;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  /* color: saddlebrown; */
+  padding: 10px;
+  text-align: center;
+}
+
+.item h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.item .card-body {
+  text-align: center;
+}
+
+.item .card-title {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.item #box {
+  background-color: #f7dc6f;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.item #box h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.item #box h5 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+[id^="country"] {
+  color: rgb(132, 156, 23);
+}
+[id^="box"] {
+  color: var(--bs-gray-400);
+}
+.information {
+  position: fixed;
+  top: 30px;
+  right: 20px;
+}
+.weather-input {
+  background-color: rgb(103, 187, 159);
+  border-radius: 15px;
+  border: 5px rgb(103, 187, 159) solid;
+  outline: none;
+}
