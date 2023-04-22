@@ -172,7 +172,7 @@ If you like this project you can buy me coffee. Contact detail is above.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Thank you Microverse ,W3school,Linked where we get inspiration .
+Thank you Microverse ,W3school,LinkedIn where we get inspiration .
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
