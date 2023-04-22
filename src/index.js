@@ -2,7 +2,7 @@ import "./style.scss";
 import { render } from "./modules/render.js";
 import { DataOfCity } from "./modules/defaultData";
 import { weather } from "./modules/weather";
-const inputCountry = document.querySelector(".weather-input").value;
+
 const country = document.querySelector("#submit-country");
 
 country.addEventListener("click", function () {
