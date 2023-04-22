@@ -23,20 +23,18 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Sea Food <a name="about-project"></a>
+# 📖 Weather App <a name="about-project"></a>
 
-> This site is built as part of an exercise at Microverse. The site is about a Sea Food
+> A weather application that is created using an API to retrieve weather information. The application use HTML, CSS, JavaScript, to display the weather data in a user-friendly interface.
 
-**The Sea Food project Presentaion** 
 
-- [Presentation Video](https://drive.google.com/file/d/13iwsiaSoeNBRrkJtHYN_M8yfaWM7FFrH/view?usp=sharing)
 
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> This project is built with HTML and CSS and javascript for the most part.
+> This project is built with HTML ,SCSSand dynamic javascript for the most part.
 
 <details>
   <summary>Client</summary>
@@ -80,7 +78,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](https://abeltsew.github.io/JS-Capstone/)
+- [Live Demo](https://lul-abdifan.github.io/Weather-App/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,7 +100,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/abeltsew/JS-Capstone.git
+  git clone git@github.com:Lul-Abdifan/Weather-App.git
 ```
 
 -
@@ -131,17 +129,12 @@ You can deploy this project using github pages
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author: Abel Tsegaye**
-
-- GitHub: [@githubhandle](https://github.com/abeltsew)
-- Twitter: [@twitterhandle](https://twitter.com/abeltsew)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/abeltsew)
 
 👤 **Author: Abdi Bekele**
 
-- GitHub: [@githubhandle](https://github.com/Lul-Abdifan)
-- Twitter: [@twitterhandle](https://twitter.com/AbdiBekele68808)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdi-bekele-a63860254/)
+- GitHub: [Abdi@Github](https://github.com/Lul-Abdifan)
+- Twitter: [Abdi@Twitter](https://twitter.com/AbdiBekele68808)
+- LinkedIn: [Abdi@LinkedIn](https://www.linkedin.com/in/abdi-bekele-a63860254/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -179,7 +172,7 @@ If you like this project you can buy me coffee. Contact detail is above.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Thank you Microverse
+Thank you Microverse ,W3school,Linked where we get inspiration .
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
