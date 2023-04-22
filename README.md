@@ -25,16 +25,20 @@
 
 # 📖 Weather App <a name="about-project"></a>
 
-> A weather application that is created using an API to retrieve weather information. The application use HTML, CSS, JavaScript, to display the weather data in a user-friendly interface.
+> A weather application that is created using an API to retrieve weather information. The application use HTML,boottrap, SCSS, JavaScript, to display the weather data in a user-friendly interface for default country and also It displays data for the input of user.
 
 
 
 
 ## 🛠 Built With <a name="built-with"></a>
+-  HTML
+-  SCSS
+-  Bootstrap
+-  JavaScript
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> This project is built with HTML ,SCSSand dynamic javascript for the most part.
+
 
 <details>
   <summary>Client</summary>
@@ -172,7 +176,7 @@ If you like this project you can buy me coffee. Contact detail is above.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Thank you Microverse ,W3school,Linked where we get inspiration .
+Thank you Microverse ,W3school,LinkedIn where we get inspiration .
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
